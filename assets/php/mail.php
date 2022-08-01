@@ -27,14 +27,12 @@
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message:\n$message\n";
 
-        $titulo    = '! Lotus Website - Informacion de Contacto !';
-        $email_headers = 'MIME-Version: 1.0' . "\r\n";
-        $email_headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $email_headers .= 'From: LotusWebsite <administracion@haztechconsulting.com>';
-        // weayfxtuxswoyvil
-
+        $title    = '! Lotus Website - Informacion de Contacto !';
+        
         // Build the email headers.
+        $email_headers = 'From: LotusWebsite <lotuswebsite.adm@gmail.com>';
         // $email_headers = "From: $name <$email>";
+
         $enviar = mail($recipient,$title, $email_content, $email_headers);
         // Send the email.
         if ($enviar) {
