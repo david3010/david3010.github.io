@@ -30,7 +30,7 @@
         $titulo    = '! Lotus Website - Informacion de Contacto !';
         $email_headers = 'MIME-Version: 1.0' . "\r\n";
         $email_headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $email_headers .= 'From: LotusWebsite <lotuswebsite.adm@gmail.com>';
+        $email_headers .= 'From: LotusWebsite <administracion@haztechconsulting.com>';
         // weayfxtuxswoyvil
 
         // Build the email headers.
