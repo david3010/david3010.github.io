@@ -40,7 +40,7 @@
         if ($enviar) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            var_dump($enviar);
+            echo $enviar;
             echo "Gracias! Tu mensaje ha sido enviado.";
         } else {
             // Set a 500 (internal server error) response code.
