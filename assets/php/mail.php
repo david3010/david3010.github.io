@@ -19,7 +19,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "administracion@lotusadministracion.com ";
+        $recipient = "administracion@lotusadministracion.com";
 
         // Build the email content.
         $email_content = "Name: $name\n";
@@ -35,11 +35,12 @@
 
         // Build the email headers.
         // $email_headers = "From: $name <$email>";
-
+        $enviar = mail($recipient,$title, $email_content, $email_headers);
         // Send the email.
-        if (mail($recipient,$title, $email_content, $email_headers)) {
+        if ($enviar) {
             // Set a 200 (okay) response code.
             http_response_code(200);
+            var_dump($enviar);
             echo "Gracias! Tu mensaje ha sido enviado.";
         } else {
             // Set a 500 (internal server error) response code.
