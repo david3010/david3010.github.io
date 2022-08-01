@@ -48,7 +48,7 @@
             $mail->setFrom('lotuswebsite.adm@gmail.com', 'LotusWebsite');
             $mail->addAddress($recipient, 'Lotus Administration Website');
         
-            $mail->isHTML(true);
+            $mail->isHTML(false);
             $mail->Subject = $subject;
             $mail->Body    = $email_content;
         
