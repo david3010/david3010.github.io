@@ -2607,3 +2607,9 @@ video {
 .form-message {
   margin-top: 20px;
 }
+
+/* CSS PERSONALIZADO */
+
+.owl-carousel .owl-item {
+  min-height: 160px;
+}
