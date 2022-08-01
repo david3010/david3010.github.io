@@ -19,7 +19,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "example@gmail.com ";
+        $recipient = "administracion@lotusadministracion.com ";
 
         // Build the email content.
         $email_content = "Name: $name\n";
